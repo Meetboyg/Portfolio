@@ -46,10 +46,23 @@ body {
     margin-left: 3.5rem;
     transition: 1s;
 }
-.navbar a:hover,
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar a{
+    color: red;
+}
 .navbar a.active{
-    color: var(--second-bg-color);
-} 
+    color: red;
+
+}
+.navbar a.active:hover{
+    color: var(--main-color);
+}
+    
+
+  
+
 #menu-icon{
     font-size: 3.6rem;
     color:var(--text-color);
@@ -180,23 +193,38 @@ width: 100%;
     background: var(--second-bg-color);
     padding-bottom: 6rem;
 }
-.heading{
+.heading {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
-.about-img{
-    margin-top: 100px;
+span{
+    color: var(--main-color);
+}
+.about-img{ 
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 .about-img img{
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
+}
+.about-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid red;
+    border-bottom: .2rem solid red;
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
 }
