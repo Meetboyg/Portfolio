@@ -47,17 +47,17 @@ body {
     transition: 1s;
 }
 .navbar a:hover{
-    color: var(--main-color);
+    color:var(--main-color);
 }
 .navbar a{
     color: red;
 }
 .navbar a.active{
-    color: red;
+    color: var(--main-color);
 
 }
 .navbar a.active:hover{
-    color: var(--main-color);
+    color:red;
 }
     
 
@@ -184,7 +184,7 @@ width: 100%;
     width: 500px;
     background: url("./OIP.jfif");
 }
-.about{
+.about {
     display:flex ;
     justify-content: center;
     align-items: center;
@@ -201,30 +201,52 @@ width: 100%;
 span{
     color: var(--main-color);
 }
-.about-img{ 
-    width: 15rem;
-    height: 15rem;
+.about-imgG{ 
+    width: 40rem;
+    height: 35rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
+    position: relative;
 }
-.about-img img{
+.about-imgG img{
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
+}   
+.about-content{
+    text-align: center;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
-.about-img .circle-spin{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .2rem solid red;
-    border-bottom: .2rem solid red;
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.btn-box.btns{
+    display: inline-block;
+    width: 15rem;
+}
+.moreBtn{
+    
+        height: 5rem;
+        width: 10rem;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        border-radius: 12px;
+        transition: 1s;
+ 
+   
+}
+
+.moreBtn:hover{
+    background-color:darkblue;
 }
