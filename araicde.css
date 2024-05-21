@@ -252,6 +252,42 @@ span{
 .moreBtn:hover{
     background-color:darkblue;
 }
-.education h3, span{
+ .education h1, span{
+    font-size: 80px;
+} */
+
+.education{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.education h1,
+.education h2{
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-column{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+.education-column .econtent{
+    width: 33%;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.durtai-zuil1 h3{
+font-size: 65px;
+display: flex;
+gap: 30px;
+color: var(--text-color);
+
 }
